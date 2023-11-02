@@ -52,7 +52,7 @@ runs:
         
         if (!(Test-Path -Path $exe)) {
           Write-Host "Downloading llvm-msvc_X86_64_installer.exe..."
-          $url = 'https://github.com/LOLNiubility/setup-llvm-msvc/releases/download/' + $releaseVersion + '/llvm-msvc_X86_64_installer.exe'
+          $url = 'https://github.com/LOLNiubility/LLVMRelease/releases/download/' + $releaseVersion + '/llvm-msvc_X86_64_installer.exe'
           Invoke-WebRequest -Uri $url -OutFile $exe
           Write-Host "llvm-msvc_X86_64_installer.exe downloaded successfully."
         } else {
