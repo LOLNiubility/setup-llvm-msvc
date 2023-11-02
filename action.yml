@@ -27,8 +27,8 @@ runs:
       with:
         script: |
           const { data } = await github.repos.getLatestRelease({
-            owner: 'NewWorldComingSoon',
-            repo: 'llvm-msvc-build'
+            owner: 'LOLNiubility',
+            repo: 'LLVMRelease'
           })
           console.log(data.tag_name)
           return data.tag_name
